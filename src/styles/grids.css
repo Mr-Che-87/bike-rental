@@ -1,0 +1,16 @@
+:root {
+    --gap: 16px;
+    --gutter: 24px;
+}
+@media (max-width: 1024px) {
+    :root {
+        --gap: 12px;
+        --gutter: 20px;
+    }
+}
+@media (max-width: 548px) {
+    :root {
+        --gap: 8px;
+        --gutter: 12px;
+    }
+}

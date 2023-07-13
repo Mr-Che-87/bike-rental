@@ -1,0 +1,11 @@
+@import url('./resets.css');
+@import url('./colors.css');
+@import url('./typography.css');
+@import url('./grids.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: var(--text-color);
+    background-color: var(--color-100);
+}

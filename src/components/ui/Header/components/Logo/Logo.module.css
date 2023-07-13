@@ -1,0 +1,36 @@
+.logo {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-1);
+    background-color: var(--color-900);
+    color: var(--color-50);
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    cursor: pointer;
+}
+.logo:focus {
+    outline-color: transparent;
+}
+.logo:focus-visible {
+    box-shadow: 0 0 0 6px var(--color-500);
+}
+@media (hover: hover) and (pointer: fine) {
+    .logo:hover {
+        background-color: var(--color-700) !important;
+    }
+}
+@media (max-width: 1024px) {
+    .logo {
+        height: 44px;
+        width: 44px;
+    }
+}
+@media (max-width: 724px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+}

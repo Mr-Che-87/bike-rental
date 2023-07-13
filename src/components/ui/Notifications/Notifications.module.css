@@ -1,0 +1,21 @@
+.wrap {
+    position: fixed;
+    bottom: 0;
+    background: var(--color-900);
+    padding: 12px;
+    color: var(--color-50);
+    width: 100%;
+    font-size: var(--text-2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.wrap .info {
+    width: 100%;
+}
+.wrap .title {
+    font-size: var(--text-1);
+}
+.wrap .title {
+    font-size: var(--text-2);
+}

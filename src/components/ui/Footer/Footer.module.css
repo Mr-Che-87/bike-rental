@@ -1,0 +1,6 @@
+.footer .inner {
+    border-top: 1px solid var(--color-200);
+    padding: var(--gutter) 0;
+    color: var(--color-700);
+    text-align: center;
+}

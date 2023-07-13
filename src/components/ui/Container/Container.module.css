@@ -1,0 +1,17 @@
+.container.left {
+    text-align: left;
+}
+.container.center {
+    text-align: center;
+}
+.container.big .inner {
+    max-width: 1440px;
+    margin: auto;
+}
+.container.small .inner {
+    max-width: 640px;
+    margin: auto;
+}
+.container .inner {
+    padding: 0 var(--gutter);
+}

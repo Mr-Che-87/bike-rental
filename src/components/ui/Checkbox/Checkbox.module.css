@@ -1,0 +1,62 @@
+.label {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+}
+.label .text {
+    font-size: var(--text-2);
+    line-height: var(--line-height-text-2);
+    color: var(--color-900);
+}
+/* ------------------------ /
+/ CHECKBOX /
+/ ------------------------ */
+.label .checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: 2px solid var(--color-900);
+    border-radius: 4px;
+    margin: 0;
+    transition: border 0.2s ease;
+}
+.label .checkbox:checked::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    transform: rotate(45deg);
+    height: 12px;
+    width: 6px;
+    top: 1px;
+    left: 5px;
+    border-bottom: 2px solid var(--color-900);
+    border-right: 2px solid var(--color-900);
+}
+.label .checkbox:focus-within {
+    outline: none;
+}
+.label .checkbox:focus-visible {
+    border: 2px solid var(--color-600);
+}
+@media (hover: hover) and (pointer: fine) {
+    .label .checkbox:hover {
+        border: 2px solid var(--color-600);
+    }
+}
+@media (max-width: 1024px) {
+    .label .text {
+        margin-top: 1px;
+    }
+}
+@media (max-width: 940px) {
+    .label .text {
+        font-size: var(--text-1);
+        line-height: var(--line-height-text-1);
+        margin-top: 0;
+    }
+}

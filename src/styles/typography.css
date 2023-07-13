@@ -1,0 +1,79 @@
+:root {
+    --title-h1: 64px;
+    --title-h2: 44px;
+    --text-1: 22px;
+    --text-2: 18px;
+    --text-3: 16px;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --title-h1: 48px;
+        --title-h2: 38px;
+        --text-1: 20px;
+        --text-2: 16px;
+        --text-3: 14px;
+    }
+}
+@media (max-width: 940px) {
+    :root {
+        --title-h1: 48px;
+        --title-h2: 32px;
+        --text-1: 18px;
+        --text-2: 14px;
+        --text-3: 12px;
+    }
+}
+
+@media (max-width: 548px) {
+    :root {
+        --title-h1: 36px;
+        --title-h2: 28px;
+        --text-1: 16px;
+        --text-2: 14px;
+        --text-3: 12px;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-size: var(--text-1);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    all: unset;
+    display: block;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--title-h1);
+    line-height: 120%;
+    font-weight: 700;
+}
+h2 {
+    font-size: var(--title-h2);
+    line-height: 120%;
+    font-weight: 700;
+}
+h3 {
+    font-size: var(--title-h3);
+    line-height: 140%;
+    font-weight: 700;
+}
+h3 {
+    font-size: var(--title-h4);
+    line-height: 140%;
+    font-weight: 700;
+}
+p {
+    font-size: var(--text-1);
+    line-height: 140%;
+}

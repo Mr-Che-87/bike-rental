@@ -1,0 +1,25 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.list .row {
+    display: flex;
+    align-items: center;
+    background: var(--color-50);
+    padding: var(--gutter);
+    border-radius: 12px;
+    gap: var(--gap);
+}
+
+.list .row .info {
+    width: 100%;
+}
+.list .row .type {
+    width: 100%;
+}
+.list .row .actions {
+    display: flex;
+    gap: calc(var(--gap) / 2);
+}
